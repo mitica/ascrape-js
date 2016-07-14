@@ -1,4 +1,4 @@
-# html-article
+# web-article
 
 Nodejs module for extracting web page content using Cheerio.
 
@@ -7,13 +7,13 @@ This module is based on [luin](https://github.com/luin/readability)'s readabilit
 ## Install
 
 ```
-npm install html-article
+npm install web-article
 ```
 
 ## Usage
 
 ```
-var read = require('html-article');
+var read = require('web-article');
 
 read(html [, options], callback);
 ```
@@ -27,7 +27,7 @@ read(html [, options], callback);
 ## Example
 
 ```
-var read = require('html-article');
+var read = require('web-article');
 
 read('http://howtonode.org/really-simple-file-uploads', function(err, article, meta) {
   // Main Article
@@ -45,11 +45,11 @@ read('http://howtonode.org/really-simple-file-uploads', function(err, article, m
 
 ## Options
 
-html-article will pass the options to request directly. See request lib to view all available options.
+web-article will pass the options to request directly. See request lib to view all available options.
 
-html-article has one additional option:
+web-article has one additional option:
 
-- **preprocess** - which should be a function to check or modify downloaded source before passing it to html-article.
+- **preprocess** - which should be a function to check or modify downloaded source before passing it to web-article.
 
 ```
 read(url, {
