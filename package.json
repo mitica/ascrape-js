@@ -2,7 +2,7 @@
   "name": "web-article",
   "version": "1.0.0",
   "author": "Dumitru Cantea",
-  "description": "Extracts article content from HTML.",
+  "description": "Extracts article content from a web page.",
   "homepage": "https://github.com/Mitica/web-article-js",
   "repository": {
     "type": "git",
