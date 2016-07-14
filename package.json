@@ -1,0 +1,41 @@
+{
+  "name": "web-article",
+  "version": "1.0.0",
+  "author": "Dumitru Cantea",
+  "description": "Extracts article content from HTML.",
+  "homepage": "https://github.com/Mitica/web-article-js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Mitica/web-article-js.git"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -R spec -t 4000",
+    "lint": "eslint ."
+  },
+  "main": "./lib/index.js",
+  "licenses": [
+    {
+      "type": "Apache License 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "encoding": "~0.1.7",
+    "request": "~2.40.0"
+  },
+  "engines": [
+    "node >=0.8.0"
+  ],
+  "keywords": [
+    "web-article",
+    "article",
+    "article-content",
+    "readability"
+  ],
+  "devDependencies": {
+    "mocha": "~1.8.2",
+    "nock": "^7.7.3",
+    "should": "^7.1.0"
+  }
+}
