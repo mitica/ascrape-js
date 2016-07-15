@@ -1,4 +1,4 @@
-# web-article
+# ascarpe
 
 Nodejs module for extracting web page content using Cheerio.
 
@@ -7,15 +7,15 @@ This module is based on [luin](https://github.com/luin/readability)'s readabilit
 ## Install
 
 ```
-npm install web-article
+npm install ascarpe
 ```
 
 ## Usage
 
 ```
-var read = require('web-article');
+var scrape = require('ascarpe');
 
-read(html [, options], callback);
+scrape(html [, options], callback);
 ```
 
 **Where**
@@ -27,9 +27,9 @@ read(html [, options], callback);
 ## Example
 
 ```
-var read = require('web-article');
+var scrape = require('ascarpe');
 
-read('http://howtonode.org/really-simple-file-uploads', function(err, article, meta) {
+scrape('http://howtonode.org/really-simple-file-uploads', function(err, article, meta) {
   // Main Article
   console.log(article.content.text());
 
@@ -45,14 +45,14 @@ read('http://howtonode.org/really-simple-file-uploads', function(err, article, m
 
 ## Options
 
-web-article will pass the options to request directly. See request lib to view all available options.
+ascarpe will pass the options to request directly. See request lib to view all available options.
 
-web-article has one additional option:
+ascarpe has one additional option:
 
-- **preprocess** - which should be a function to check or modify downloaded source before passing it to web-article.
+- **preprocess** - which should be a function to check or modify downloaded source before passing it to ascarpe.
 
 ```
-read(url, {
+scrape(url, {
   preprocess: function(source, response, contentType, callback) {
     if (source.length > maxBodySize) {
       return callback(new Error('too big'));
