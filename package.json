@@ -1,12 +1,12 @@
 {
-  "name": "ascarpe",
+  "name": "ascrape",
   "version": "1.0.0",
   "author": "Dumitru Cantea",
   "description": "Extracts article content from a web page.",
-  "homepage": "https://github.com/Mitica/ascarpe-js",
+  "homepage": "https://github.com/Mitica/ascrape-js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/Mitica/ascarpe-js.git"
+    "url": "git://github.com/Mitica/ascrape-js.git"
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha -R spec -t 4000",
@@ -28,7 +28,7 @@
     "node >=0.8.0"
   ],
   "keywords": [
-    "ascarpe",
+    "ascrape",
     "article",
     "article-content",
     "readability"

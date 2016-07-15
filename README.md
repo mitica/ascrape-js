@@ -1,4 +1,4 @@
-# ascarpe
+# ascrape
 
 Nodejs module for extracting web page content using Cheerio.
 
@@ -7,13 +7,13 @@ This module is based on [luin](https://github.com/luin/readability)'s readabilit
 ## Install
 
 ```
-npm install ascarpe
+npm install ascrape
 ```
 
 ## Usage
 
 ```
-var scrape = require('ascarpe');
+var scrape = require('ascrape');
 
 scrape(html [, options], callback);
 ```
@@ -27,7 +27,7 @@ scrape(html [, options], callback);
 ## Example
 
 ```
-var scrape = require('ascarpe');
+var scrape = require('ascrape');
 
 scrape('http://howtonode.org/really-simple-file-uploads', function(err, article, meta) {
   // Main Article
@@ -45,11 +45,11 @@ scrape('http://howtonode.org/really-simple-file-uploads', function(err, article,
 
 ## Options
 
-ascarpe will pass the options to request directly. See request lib to view all available options.
+ascrape will pass the options to request directly. See request lib to view all available options.
 
-ascarpe has one additional option:
+ascrape has one additional option:
 
-- **preprocess** - which should be a function to check or modify downloaded source before passing it to ascarpe.
+- **preprocess** - which should be a function to check or modify downloaded source before passing it to ascrape.
 
 ```
 scrape(url, {
