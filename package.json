@@ -1,6 +1,6 @@
 {
   "name": "ascrape",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": "Dumitru Cantea",
   "description": "Extracts article content from a web page.",
   "homepage": "https://github.com/Mitica/ascrape-js",
