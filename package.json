@@ -15,8 +15,8 @@
   "main": "./lib/index.js",
   "licenses": [
     {
-      "type": "Apache License 2.0",
-      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+      "type": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
     }
   ],
   "dependencies": {
